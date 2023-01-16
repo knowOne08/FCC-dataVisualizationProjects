@@ -1,0 +1,18 @@
+<!-- The D3 text() method can take a string or a callback function as an argument: -->
+<!-- selection.text((d) => d) -->
+<!-- In the example above, the parameter d refers to a single entry in the dataset that a selection is bound to. -->
+<body>
+    <script>
+      const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+  
+      d3.select("body").selectAll("h2")
+        .data(dataset)
+        .enter()
+        .append("h2")
+        // Add your code below this line
+  
+        .text((d) => d + " USD");
+  
+        // Add your code above this line
+    </script>
+  </body>
