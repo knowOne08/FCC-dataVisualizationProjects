@@ -1,0 +1,20 @@
+<!-- The D3 library focuses on a data-driven approach. When you have a set of data, you can apply D3 methods to display it on the page. Data comes in many formats -->
+
+<!-- The first step is to make D3 aware of the data. The data() method is used on a selection of DOM elements to attach the data to those elements. The data set is passed as an argument to the method. -->
+<!-- A common workflow pattern is to create a new element in the document for each piece of data in the set. D3 has the enter() method for this purpose. -->
+<!-- When enter() is combined with the data() method, it looks at the selected elements from the page and compares them to the number of data items in the set. If there are fewer elements than data items, it creates the missing elements. -->
+<body>
+    <script>
+      const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+  
+      // Add your code below this line
+      d3.select("body").selectAll("h2")
+        .data(dataset)
+        .enter()
+        .append("h2")
+        .text("New Title")
+  
+  
+      // Add your code above this line
+    </script>
+  </body>
